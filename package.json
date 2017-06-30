@@ -1,0 +1,10 @@
+{
+  "name": "kurento-rtp-client",
+  "version": "0.0.1-dev",
+  "private": true,
+  "dependencies": {
+    "minimist": "^1.1.1",
+    "ws": "~0.7.2",
+    "kurento-client": "Kurento/kurento-client-js"
+  }
+}
