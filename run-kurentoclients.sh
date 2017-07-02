@@ -58,9 +58,9 @@ do
       files_counter=1
     else
       files_counter=$((files_counter+1))
-    fi 
+    fi
 
-    (sleep $SLEEP_TIME;$KURENTO_CLIENT_PATH node server --input_video $INPUT_FILE) &
+    (sleep $SLEEP_TIME;$KURENTO_CLIENT_PATH node server --room_id $1 --input_video $INPUT_FILE) &
     SLEEP_TIME=$(($SLEEP_TIME+$DELAY))
 done
 wait

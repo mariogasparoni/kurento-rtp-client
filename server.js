@@ -45,6 +45,7 @@ errorHandler();
 var argv = minimist(process.argv.slice(2), {
   default: {
       ws_uri: 'wss://localhost:8443/kurentomcu',
+      room_id: 'room1',
       input_video : '',
       receive_only: false
   }
@@ -113,6 +114,7 @@ function startSignaling() {
 
   var message = {
     id : 'start',
+    roomId : argv.room_id,
     sdpOffer : localSdp
   }
 
