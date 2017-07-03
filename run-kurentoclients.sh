@@ -1,8 +1,8 @@
+#!/bin/bash
 # kurento-rtp-client (c) 2016-2017 Mario Gasparoni Junior
 #
 # Freely distributed under the MIT license
 #
-#!/bin/bash
 #Connect a kurentoclient with audio/video in the given mcu room.
 #This uses kurentoclient (https://github.com/mariogasparoni/kurento-tutorial-node/kurentoclient)
 #usage:
@@ -13,7 +13,6 @@
 #   the remote use, NUMBER_OF_INSTANCES is the number of running instances and
 #   VIDEO_FILE1, VIDEO_FILE2, ... is the path to a video file to be used as
 #   input.
-
 KURENTO_CLIENT_PATH='node server'
 ROOM_ID=$1
 NUMBER_OF_INSTANCES=$2
