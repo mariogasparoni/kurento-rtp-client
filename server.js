@@ -14,6 +14,8 @@ var fs = require('fs');
 const WebSocket = require('ws');
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED=0;
+process.on('SIGTERM', exit,1);
+process.on('SIGINT', exit,1);
 
 const MIN_AUDIO_PORT=5000;
 const MAX_AUDIO_PORT=20000;
